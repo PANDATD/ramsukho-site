@@ -1,0 +1,208 @@
+/*==== RES AVENUE BOOKING COMMON =====*/
+
+.rb-wrapper {
+	width: 100%;
+	margin: 20px 0;
+	font-family: 'Arial', sans-serif;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rb-main-container {
+	width: 100%;
+	padding: 0 5px;
+	background-color: #fff;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.rb-container {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rb-row {
+	margin-left: -10px;
+	margin-right: -10px;
+	display: table;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rb-row::after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+.rb-row::before {
+	display: table;
+	content: " ";
+}
+
+.rb-left-parent,
+.rb-right-parent {
+	display: table-cell;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rb-col {
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*====INPUT-SELECT STYLING====*/
+
+.rb-col input,
+.rb-col select {
+	width: 100%;
+	background-color: #fff;
+	height: 40px;
+	border: 1px solid #000;
+	color: #000;
+	padding: 0 10px;
+	outline: 0;
+	box-shadow: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rb-col.submit button {
+	background-color: #c9a263;
+	border: 1px solid #c9a263;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	height: 40px;
+	width: 100%;
+	outline: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rb-col.submit button:hover,
+.rb-col.submit button:focus {
+	background-color: #D4AD6F;
+	border: 1px solid #D4AD6F;
+	color: #fff;
+}
+
+
+.rb-col input.calender {
+	background-image: url('../img/calendar.png');
+	background-repeat: no-repeat;
+	background-position: center right 8px;
+	padding-right: 30px;
+}
+
+.rb-col select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url('../img/downarrow.png');
+	background-repeat: no-repeat;
+	background-position: center right 8px;
+	padding-right: 30px;
+	line-height: 36px;
+}
+
+.rb-col select::-ms-expand {
+	display: none;
+}
+
+.rb-col input:hover,
+.rb-col input:focus,
+.rb-col input:active,
+.rb-col select:hover,
+.rb-col select:focus,
+.rb-col select:active,
+.rb-col input::placeholder {
+	color: #000;
+}
+
+.rb-col input:-ms-input-placeholder {
+	color: #000;
+}
+
+.rb-col input::-ms-input-placeholder {
+	color: #000;
+}
+
+.rb-col.error-required input,
+.rb-col.error-required select {
+	border: 1px solid red !important;
+}
+
+
+/*====COLOUMS WIDTH ADJUSTMENTS====*/
+
+.rb-col.prop,
+.rb-col.datefrm,
+.rb-col.dateto {
+	max-width: 33.33%;
+	width: 100%;
+}
+
+.rb-col.room {
+	max-width: 100px;
+	width: 100%;
+}
+
+.rb-col.adult,
+.rb-col.child,
+.rb-col.cupcode {
+	max-width: 90px;
+	width: 100%;
+}
+
+.rb-col.submit {
+	max-width: 120px;
+	width: 100%;
+}
+
+/*==VERTICAL FORM==*/
+
+.rb-wrapper.vertical .rb-row,
+.rb-wrapper.vertical .rb-left-parent,
+.rb-wrapper.vertical .rb-right-parent {
+	display: block;
+}
+
+
+.rb-wrapper.vertical .rb-col.prop,
+.rb-wrapper.vertical .rb-col.datefrm,
+.rb-wrapper.vertical .rb-col.dateto,
+.rb-wrapper.vertical .rb-col.cupcode,
+.rb-wrapper.vertical .rb-col.submit {
+	max-width: 100%;
+}
+
+.rb-wrapper.vertical .rb-col.room,
+.rb-wrapper.vertical .rb-col.adult,
+.rb-wrapper.vertical .rb-col.child {
+	max-width: 33.33333333333333%;
+}
+
+/*==IMPORT CSS==*/
+
+@import ('resavenue-booking-datepicker.css');
+@import ('resavenue-booking-theme.css');

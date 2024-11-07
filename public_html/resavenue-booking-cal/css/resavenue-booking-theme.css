@@ -1,0 +1,132 @@
+/*==== RES AVENUE BOOKING COMMON =====*/
+
+.rb-wrapper {
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.rb-main-container {
+	background-color: #fff;
+}
+
+
+/*====INPUT-SELECT STYLING====*/
+
+.rb-col input,
+.rb-col select {
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000;
+
+}
+
+.rb-col.submit button {
+	background-color: #416501;
+	border: 1px solid #416501;
+	color: #fff;
+
+}
+
+.rb-col.submit button:hover,
+.rb-col.submit button:focus {
+	background-color: #517b08;
+	border: 1px solid #517b08;
+	color: #fff;
+}
+
+
+.rb-col input.calender {
+	background-image: url('../img/calendar.png');
+}
+
+.rb-col select {
+	background-image: url('../img/downarrow.png');
+}
+
+
+.rb-col input:hover,
+.rb-col input:focus,
+.rb-col input:active,
+.rb-col select:hover,
+.rb-col select:focus,
+.rb-col select:active,
+.rb-col input::placeholder {
+	color: #000;
+}
+
+.rb-col input:-ms-input-placeholder {
+	color: #000;
+}
+
+.rb-col input::-ms-input-placeholder {
+	color: #000;
+}
+
+.rb-col.error-required input,
+.rb-col.error-required select {
+	border: 1px solid red !important;
+}
+
+
+
+/*==DATEPICKER==*/
+
+.res-datepicker th.dow {
+	background-color: #ffffff;
+}
+
+.res-datepicker td.active,
+.res-datepicker td.active:hover {
+	background-color: #416501;
+}
+
+.res-datepicker td.active:hover,
+.res-datepicker td.active:hover:hover,
+.res-datepicker td.active:focus,
+.res-datepicker td.active:hover:focus,
+.res-datepicker td.active:active,
+.res-datepicker td.active:hover:active,
+.res-datepicker td.active.active,
+.res-datepicker td.active:hover.active,
+.res-datepicker td.active.disabled,
+.res-datepicker td.active:hover.disabled,
+.res-datepicker td.active[disabled],
+.res-datepicker td.active:hover[disabled] {
+	background-color: #416501;
+}
+
+.res-datepicker td.active:active,
+.res-datepicker td.active:hover:active,
+.res-datepicker td.active.active,
+.res-datepicker td.active:hover.active {
+	background-color: #416501;
+}
+
+.res-datepicker td span.active {
+	background-color: #416501;
+}
+
+.res-datepicker td span.active:hover,
+.res-datepicker td span.active:focus,
+.res-datepicker td span.active:active,
+.res-datepicker td span.active.active,
+.res-datepicker td span.active.disabled,
+.res-datepicker td span.active[disabled] {
+	background-color: #416501;
+}
+
+.res-datepicker td span.active:active,
+.res-datepicker td span.active.active {
+	background-color: #416501;
+}
+
+.res-datepicker thead tr:first-child th {
+	background-color: #ffffff;
+}
+
+.res-datepicker thead tr:first-child th:hover {
+	background-color: #ffffff;
+}
+
+.styled-select.inner-page select { border: 1px solid #cccccc; height: 34px; }
+.inner-page.submit .btn-block { margin-top: 15px; padding: 4px 16px;  }

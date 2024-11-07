@@ -1,0 +1,52 @@
+/*FOR RESAVENUE CALENDER*/
+
+.booking-sec {
+	position: relative;
+	z-index: 98;
+}
+
+
+.resavenue-booking-sec {
+	background-color: #fff;
+	margin: -50px auto 0 auto;
+	width: 100%;
+	max-width: 957px;
+	height: 60px;
+	position: relative;
+	margin-bottom: 0;
+	-webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.41);
+	box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.41);
+}
+
+
+@media (max-width:999.98px) {
+	.resavenue-booking-sec {
+		height: 260px;
+		padding: 0;
+	}
+}
+
+
+/*==== IFRAME =====*/
+
+.resavenue-booking-ifrm {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	z-index: 1;
+}
+
+.resavenue-booking-ifrm:hover {
+	height: 600px;
+}
+
+.resavenue-booking-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 98;
+	display: none;
+}

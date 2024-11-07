@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://ramsukhresorts.com/$1 [R=301,L]
+
+
+Redirect 302 /stats http://ramsukhresorts.com/cgi-bin/awstats/awstats.pl
+Redirect 301 /livechat http://chat.ramsukhresorts.com/support/index.php/site_admin
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /redirect.php [L]

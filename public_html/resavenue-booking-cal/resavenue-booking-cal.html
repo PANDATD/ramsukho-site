@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ResAvenue - Booking Calendar</title>
+
+	<!--==CSS==-->
+	<link rel="stylesheet" href="css/resavenue-booking-datepicker.css" type="text/css" />
+	<link rel="stylesheet" href="css/resavenue-booking.css" type="text/css" />
+
+	<!--==THEME==-->
+	<link rel="stylesheet" href="css/resavenue-booking-theme.css" type="text/css" />
+
+
+</head>
+
+<body style="margin: 0;padding: 0">
+
+
+	<!--== RES BOOKING CALENDER==-->
+	<div class="rb-wrapper">
+		<div class="rb-main-container">
+			<div class="rb-container">
+
+				<form name="resBooking" id="resBooking" action="https://www.resavenue.com/bookingNew/servlet/checkAvailable.resBookings" method="get" target="_blank">
+					<input type="hidden" name="targetTemplate" value="3">
+					<input type="hidden" name="curr" value="INR">
+
+					<!-- uncomment below line, if multiple property are not present -->
+					<input type="hidden" name="regCode" value="ZTCX1016">
+					<!-- <input type="hidden" name="arr_date" id="arr_date"> -->
+					<!-- <input type="hidden" name="dep_date" id="dep_date"> -->
+
+
+
+					<div class="rb-row">
+
+						<div class="rb-left-parent">
+
+							<!--<div class="rb-col prop">
+	<select name="regCode">
+					<option value="">Select Property</option>
+				<option value="GVGA0319">Daiwik Hotels Rameswaram</option>
+				<option value="IEVA1227">Daiwik Hotels Shirdi</option>
+	</select>
+</div>-->
+							<div class="rb-col datefrm">
+								<input type="text" id="arr_date" name="arr_date" placeholder="Check-In" class="calender" value="" autocomplete="off" />
+							</div>
+							<div class="rb-col dateto">
+								<input type="text" id="dep_date" name="dep_date" placeholder="Check-Out" class="calender" value="" autocomplete="off" />
+							</div>
+
+						</div>
+
+						<div class="rb-right-parent">
+
+							<div class="rb-col room">
+								<select name="roomNo">
+				<option value="">Rooms</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+							</div>
+							<div class="rb-col adult">
+								<select name="adult_1">
+				<option value="">Adult</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+							</div>
+							<div class="rb-col child">
+								<select name="child_1">
+				<option value="0">Child</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+							</div>
+							<div class="rb-col cupcode">
+								<input type="text" name="discountCode" placeholder="Coupon" autocomplete="off" />
+							</div>
+							<div class="rb-col submit">
+								<button type="submit">submit</button>
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--==JS==-->
+	<script src="js/jquery.js"></script>
+	<script src="js/resavenue-booking-datepicker.js"></script>
+	<script src="js/resavenue-booking-scripts.js"></script>
+
+</body>
+
+</html>
