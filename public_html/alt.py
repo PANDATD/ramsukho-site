@@ -130,7 +130,7 @@ alt_text_mapping = {
 
 
 # Root directory of the project where HTML files are located
-root_directory = r"C:\Users\Asus\Documents\GitHub\ramsukh_website_work"
+root_directory = r"/home/pandatd/Documents/ramsukh(1)/"
 
 def replace_alt_text_in_file(file_path, alt_text_mapping):
     with open(file_path, 'r', encoding='utf-8') as file:
